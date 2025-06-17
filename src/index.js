@@ -4,7 +4,7 @@ const cors = require('cors');
 const passport = require('passport');
 const path = require('path');
 const { sequelize } = require('./models');
-require('./config/passport')(passport);
+require('../config/passport')(passport);
 
 const productosRoutes = require('../routes/productos');
 
